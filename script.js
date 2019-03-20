@@ -2,7 +2,7 @@ const http = require("http");
 const colors = require("colors");
 const url = require("url");
 const fs = require("fs");
-const port = 8080;
+const port = process.env.PORT || 5000;
 
 http
   .createServer((req, res) => {
